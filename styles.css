@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('back.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    animation: fadeIn 1s ease-in;
+    transform: translateY(-10px);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+}
+
+form label {
+    font-size: 16px;
+    color: #555;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus, form textarea:focus {
+    border-color: black;
+    box-shadow: 0 0 8px #555;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #888;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(136, 136, 136, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    animation: fadeInTable 1s ease-in-out;
+}
+
+@keyframes fadeInTable {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+thead {
+    background-color: #f3f7fa;
+}
+
+th {
+    padding: 12px;
+    font-size: 16px;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    text-align: left;
+}
+
+td {
+    padding: 12px;
+    font-size: 15px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s;
+}
+
+td:hover {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) {
+    background-color: #fafafa;
+}
